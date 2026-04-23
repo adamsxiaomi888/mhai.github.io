@@ -17,6 +17,7 @@
           </div>
           <nav class="nav" aria-label="页面导航">
             <a class="nav__link" href="#what">能力</a>
+            <a class="nav__link" href="#issues">常见问题</a>
             <a class="nav__link" href="#case">案例</a>
             <a class="nav__link" href="#pricing">报价</a>
             <a class="nav__link" href="#contact">联系</a>
@@ -77,6 +78,41 @@
               <h3>疑难问题定位与止血</h3>
               <p>死机/卡死/偶发/掉线/性能抖动：复现→根因→止血→回归，交付可定位资产与避免复发的门禁建议。</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="issues" class="section">
+        <div class="container">
+          <h2>常见问题清单（对号入座）</h2>
+          <div class="grid grid--3">
+            <div class="card">
+              <h3>首帧慢 / 卡顿 / 掉帧</h3>
+              <p>相机链路、预处理、推理、后处理、线程调度互相抢资源，表现为首屏慢、交互卡、帧率不稳。</p>
+            </div>
+            <div class="card">
+              <h3>内存暴涨 / OOM / 泄漏</h3>
+              <p>推理缓存、图像中间结果、重复分配、碎片化导致峰值过高或长时间运行后崩溃。</p>
+            </div>
+            <div class="card">
+              <h3>模型能跑但难交付</h3>
+              <p>精度回归口径不清、量化后效果波动、不同平台结果不一致，缺少稳定可重复的端侧部署与验收流程。</p>
+            </div>
+            <div class="card">
+              <h3>偶发死机 / 卡死 / 看门狗</h3>
+              <p>现场“偶现”、日志不全、难复现：需要把问题变成可观测、可复现，再定位根因并止血回归。</p>
+            </div>
+            <div class="card">
+              <h3>相机/ISP/图像链路抖动</h3>
+              <p>曝光/对焦/帧同步、色彩空间与缩放链路导致输出不稳定，间接影响模型稳定性与指标。</p>
+            </div>
+            <div class="card">
+              <h3>版本迭代后性能回退</h3>
+              <p>发版后“越改越慢”：需要建立性能基线与回归口径（P50/P90）以及可执行的门禁。</p>
+            </div>
+          </div>
+          <div class="note">
+            你只要把“平台/现象/可复现输入”发我，我先用 2 天快速诊断把问题拆解成可量化指标与行动清单。
           </div>
         </div>
       </section>
