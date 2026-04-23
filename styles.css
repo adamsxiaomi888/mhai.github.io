@@ -220,6 +220,10 @@ h3{margin:0 0 10px; font-size:18px; letter-spacing:-0.24px; font-weight:590}
 .btn--ghost:hover{background:rgba(255,255,255,.04)}
 .btn--full{width:100%}
 
+.btn--copy{
+  margin-top: 10px;
+}
+
 .contact{display:grid; gap:10px}
 .contact__row{
   display:flex; justify-content:space-between; gap:10px;
@@ -243,6 +247,27 @@ h3{margin:0 0 10px; font-size:18px; letter-spacing:-0.24px; font-weight:590}
 .card--price .price__title{color:rgba(208,214,224,.92); font-weight:510}
 .card--price .price__num{font-size:22px; font-weight:590; margin-top:8px; letter-spacing:-0.24px}
 .card--price .price__desc{margin-top:8px; color:rgba(138,143,152,.95); font-size:13px}
+
+.toast{
+  position: fixed;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  background: rgba(25,26,27,.86);
+  border: 1px solid var(--line);
+  color: rgba(247,248,248,.92);
+  padding: 10px 12px;
+  border-radius: 10px;
+  box-shadow: var(--shadowFocus);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .12s ease, transform .12s ease;
+  font-size: 13px;
+}
+.toast--show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(-2px);
+}
 
 @media (max-width: 920px){
   .grid--3{grid-template-columns:1fr}
