@@ -8,13 +8,19 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="top">
+    <header class="top" id="top">
       <div class="container">
         <div class="top__row">
           <div class="brand">
             <div class="brand__title">杨工</div>
             <div class="brand__subtitle">嵌入式 Linux / 端侧AI 工程化｜深圳｜远程交付（周末/晚上可支持）</div>
           </div>
+          <nav class="nav" aria-label="页面导航">
+            <a class="nav__link" href="#what">能力</a>
+            <a class="nav__link" href="#case">案例</a>
+            <a class="nav__link" href="#pricing">报价</a>
+            <a class="nav__link" href="#contact">联系</a>
+          </nav>
           <div class="top__cta">
             <a class="btn btn--primary" href="#contact">立即联系</a>
             <a class="btn btn--ghost" href="#pricing">查看报价</a>
@@ -212,6 +218,13 @@
 
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
+      const topEl = document.getElementById("top");
+      const onScroll = () => {
+        const scrolled = window.scrollY > 8;
+        topEl.classList.toggle("top--scrolled", scrolled);
+      };
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
     </script>
   </body>
 </html>
