@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="杨工｜嵌入式 Linux / 端侧AI 工程化｜RK/RV 启动加速、rootfs 瘦身、稳定性与可定位性建设｜远程交付" />
-    <title>杨工｜RK/RV 启动加速 & rootfs 瘦身（远程交付）</title>
+    <meta name="description" content="杨工｜端侧AI工程化 + 疑难救火｜模型加速、首帧优化、量化剪枝、稳定性与可定位性｜远程交付" />
+    <title>杨工｜端侧AI工程化 + 疑难救火（远程交付）</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -28,32 +28,32 @@
         </div>
 
         <div class="hero">
-          <h1>让设备更快启动、更小镜像、更好定位问题</h1>
+          <h1>端侧AI工程化 + 疑难救火</h1>
           <p class="hero__desc">
-            专注 RK/RV 平台（Buildroot / Debian / Ubuntu）的<strong>启动加速</strong>、<strong>rootfs 瘦身</strong>与<strong>工程化可定位/可回滚</strong>建设。
-            先做 2 天快速诊断，交付时间线、瓶颈清单、裁剪机会与专项里程碑报价。
+            把模型从“能跑”做到<strong>跑得快</strong>、<strong>跑得稳</strong>、<strong>可交付</strong>；同时承接嵌入式/端侧系统的疑难问题定位与止血。
+            先做 2 天快速诊断，交付性能/稳定性基线、瓶颈清单、可达目标与专项里程碑报价。
           </p>
           <div class="hero__badges">
             <span class="badge">2天快速诊断</span>
-            <span class="badge">5–10天专项优化</span>
-            <span class="badge">里程碑验收付款</span>
+            <span class="badge">AI加速专项（2–4周）</span>
+            <span class="badge">疑难问题快反（48h）</span>
           </div>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#diagnosis">先做2天诊断</a>
-            <a class="btn btn--ghost" href="#case">看案例数据</a>
+            <a class="btn btn--ghost" href="#case">看可量化收益</a>
           </div>
           <div class="hero__meta">
             <div class="meta-card">
-              <div class="meta-card__k">典型收益</div>
-              <div class="meta-card__v">30s+ → 10s 内（进桌面）</div>
+              <div class="meta-card__k">性能结果</div>
+              <div class="meta-card__v">45ms → 12ms（单帧）</div>
             </div>
             <div class="meta-card">
-              <div class="meta-card__k">镜像瘦身</div>
-              <div class="meta-card__v">1.9GB → 700MB</div>
+              <div class="meta-card__k">模型体积</div>
+              <div class="meta-card__v">1MB → 92KB（示例）</div>
             </div>
             <div class="meta-card">
               <div class="meta-card__k">交付方式</div>
-              <div class="meta-card__v">远程为主，可回滚</div>
+              <div class="meta-card__v">远程交付｜可验收</div>
             </div>
           </div>
         </div>
@@ -66,16 +66,16 @@
           <h2>你能得到什么</h2>
           <div class="grid grid--3">
             <div class="card">
-              <h3>启动时间线与瓶颈</h3>
-              <p>分段拆解上电→kernel→userspace→GUI，给出 P50/P90 对比、TOP 瓶颈与可落地动作。</p>
+              <h3>端侧AI性能加速</h3>
+              <p>把“慢/卡/首帧久”拆成可量化指标，给出可落地优化路径：预处理、推理、后处理、内存与线程调度。</p>
             </div>
             <div class="card">
-              <h3>rootfs 裁剪与依赖治理</h3>
-              <p>Buildroot/Debian/Ubuntu 按业务最小集裁剪，输出清单、风险点与回滚策略，降低镜像体积与交付成本。</p>
+              <h3>模型量化/剪枝/移植</h3>
+              <p>TensorFlow Lite / ONNX / XGBoost 等端侧部署，按精度回归口径推进量化与体积收敛，降低端侧资源占用。</p>
             </div>
             <div class="card">
-              <h3>可定位、可复现、可回滚</h3>
-              <p>统一统计口径与日志链路，避免“现场慢/偶发问题难复现”。关键改动脚本化、版本化，便于长期维护。</p>
+              <h3>疑难问题定位与止血</h3>
+              <p>死机/卡死/偶发/掉线/性能抖动：复现→根因→止血→回归，交付可定位资产与避免复发的门禁建议。</p>
             </div>
           </div>
         </div>
@@ -87,30 +87,30 @@
           <div class="case">
             <div class="case__metrics">
               <div class="metric">
-                <div class="metric__k">进桌面（GUI可交互）</div>
-                <div class="metric__v">30s+ → 10s 内</div>
+                <div class="metric__k">单帧耗时（端侧）</div>
+                <div class="metric__v">45ms → 12ms</div>
               </div>
               <div class="metric">
-                <div class="metric__k">rootfs 镜像体积</div>
-                <div class="metric__v">1.9GB → 700MB</div>
+                <div class="metric__k">模型体积</div>
+                <div class="metric__v">1MB → 92KB</div>
               </div>
               <div class="metric">
-                <div class="metric__k">平台/系统</div>
-                <div class="metric__v">RK/RV｜Buildroot / Debian / Ubuntu</div>
+                <div class="metric__k">典型平台</div>
+                <div class="metric__v">RK/RV/T113/RK3588 等</div>
               </div>
             </div>
             <div class="case__desc">
               <h3>方法概览</h3>
               <ul class="list">
-                <li>建立启动基线与时间线（P50/P90）</li>
-                <li>rootfs 包裁剪与依赖收敛（保留/移除理由、风险、回滚）</li>
-                <li>非关键服务延后/异步，缩短“可交互首屏”时间</li>
-                <li>验收统计脚本化，结果可复现</li>
+                <li>建立性能基线：首帧、单帧、内存峰值、掉帧/卡顿（P50/P90）</li>
+                <li>预处理算子/图像链路优化（含 NEON/并行化）</li>
+                <li>模型量化/剪枝与端侧部署（TFLite/ONNX 等）</li>
+                <li>疑难问题：复现与根因定位，交付可回归验证的资产</li>
               </ul>
             </div>
           </div>
           <div class="note">
-            注：具体可达目标与周期，以 2 天快速诊断结果为准。
+            注：具体可达目标与周期，以 2 天快速诊断结果为准（指标口径会在诊断期内对齐）。
           </div>
         </div>
       </section>
@@ -122,18 +122,18 @@
             <div class="card">
               <h3>交付物（2天必交付）</h3>
               <ul class="list">
-                <li>启动时间线与 TOP 瓶颈清单</li>
-                <li>rootfs 裁剪机会清单（含风险与回滚建议）</li>
-                <li>可达目标区间 + 5–10 天专项里程碑报价</li>
-                <li>验收方案（P50/P90 口径与测试步骤）</li>
+                <li>性能/稳定性基线（首帧、单帧、内存峰值、卡顿/掉帧、崩溃/卡死现象）</li>
+                <li>TOP 瓶颈清单 + 可落地优化动作（按ROI排序）</li>
+                <li>可达目标区间 + 专项里程碑报价（AI加速 / 疑难止血）</li>
+                <li>验收方案（指标口径、回归方式、对比脚本/步骤）</li>
               </ul>
             </div>
             <div class="card">
               <h3>你需要提供</h3>
               <ul class="list">
-                <li>设备/开发板或远程桌面 + 串口日志（能提供多少算多少）</li>
-                <li>固件镜像或构建方式（Buildroot / Debian / Ubuntu）</li>
-                <li>“进桌面可交互”的验收口径确认</li>
+                <li>目标设备或可复现环境（设备/镜像/日志/数据样本其一或组合）</li>
+                <li>性能现状与目标（首帧/单帧/内存/稳定性）或“最痛的问题描述”</li>
+                <li>可回归验证的输入（样本视频/图片/日志/复现步骤）</li>
               </ul>
               <div class="callout">
                 诊断后 14 天内签专项：诊断费 100% 抵扣专项款。
@@ -150,25 +150,25 @@
             <div class="card card--price">
               <div class="price__title">2天快速诊断</div>
               <div class="price__num">¥4,800</div>
-              <div class="price__desc">远程｜交付时间线/瓶颈/裁剪机会/专项报价/验收方案</div>
+              <div class="price__desc">远程｜交付性能/稳定性基线、瓶颈清单、目标区间、专项报价与验收口径</div>
               <a class="btn btn--primary btn--full" href="#contact">预约诊断</a>
             </div>
             <div class="card card--price">
-              <div class="price__title">5–10天专项优化</div>
-              <div class="price__num">¥19,800–39,800</div>
-              <div class="price__desc">启动加速 + rootfs 瘦身 + 交付脚本/清单/报告</div>
+              <div class="price__title">AI加速专项（2–4周）</div>
+              <div class="price__num">¥20,000 起</div>
+              <div class="price__desc">首帧/单帧/内存/体积：量化剪枝、移植部署、预处理优化、回归验收</div>
               <a class="btn btn--ghost btn--full" href="#contact">获取里程碑报价</a>
             </div>
             <div class="card card--price">
-              <div class="price__title">加购项</div>
-              <div class="price__num">按需</div>
-              <div class="price__desc">端侧AI加速｜通信可靠性与诊断｜CI/质量门禁</div>
+              <div class="price__title">疑难救火（48h快反）</div>
+              <div class="price__num">¥6,800 起</div>
+              <div class="price__desc">复现→定位→止血→回归：死机/卡死/偶发/掉线/性能抖动等</div>
               <a class="btn btn--ghost btn--full" href="#contact">咨询加购</a>
             </div>
           </div>
 
           <div class="note">
-            付款建议：30%预付款 + 40%中期 + 30%验收。启动/体积按同一流程统计 P50/P90 对比验收。
+            付款建议：里程碑验收（例如 30%预付款 + 40%中期 + 30%验收）。性能/稳定性按统一口径统计 P50/P90 对比验收。
           </div>
         </div>
       </section>
@@ -185,7 +185,7 @@
                 <div class="contact__row"><span class="contact__k">城市</span><span class="contact__v">深圳（远程优先）</span></div>
               </div>
               <div class="callout">
-                发我这三项信息即可开始：平台型号（RK/RV）、系统（Buildroot/Debian/Ubuntu）、当前进桌面秒数/镜像大小。
+                发我这三项信息即可开始：平台/芯片、当前现象（慢/卡/崩溃/偶发）、可复现输入（样本/日志/步骤）。
               </div>
             </div>
             <div class="card">
