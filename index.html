@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="杨工｜嵌入式 Linux / 端侧AI 工程化｜RK/RV 启动加速、rootfs 瘦身、稳定性与可定位性建设｜远程交付" />
+    <title>杨工｜RK/RV 启动加速 & rootfs 瘦身（远程交付）</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="container">
+        <div class="top__row">
+          <div class="brand">
+            <div class="brand__title">杨工</div>
+            <div class="brand__subtitle">嵌入式 Linux / 端侧AI 工程化｜深圳｜远程交付（周末/晚上可支持）</div>
+          </div>
+          <div class="top__cta">
+            <a class="btn btn--primary" href="#contact">立即联系</a>
+            <a class="btn btn--ghost" href="#pricing">查看报价</a>
+          </div>
+        </div>
+
+        <div class="hero">
+          <h1>让设备更快启动、更小镜像、更好定位问题</h1>
+          <p class="hero__desc">
+            专注 RK/RV 平台（Buildroot / Debian / Ubuntu）的<strong>启动加速</strong>、<strong>rootfs 瘦身</strong>与<strong>工程化可定位/可回滚</strong>建设。
+            先做 2 天快速诊断，交付时间线、瓶颈清单、裁剪机会与专项里程碑报价。
+          </p>
+          <div class="hero__badges">
+            <span class="badge">2天快速诊断</span>
+            <span class="badge">5–10天专项优化</span>
+            <span class="badge">里程碑验收付款</span>
+          </div>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#diagnosis">先做2天诊断</a>
+            <a class="btn btn--ghost" href="#case">看案例数据</a>
+          </div>
+          <div class="hero__meta">
+            <div class="meta-card">
+              <div class="meta-card__k">典型收益</div>
+              <div class="meta-card__v">30s+ → 10s 内（进桌面）</div>
+            </div>
+            <div class="meta-card">
+              <div class="meta-card__k">镜像瘦身</div>
+              <div class="meta-card__v">1.9GB → 700MB</div>
+            </div>
+            <div class="meta-card">
+              <div class="meta-card__k">交付方式</div>
+              <div class="meta-card__v">远程为主，可回滚</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="what" class="section">
+        <div class="container">
+          <h2>你能得到什么</h2>
+          <div class="grid grid--3">
+            <div class="card">
+              <h3>启动时间线与瓶颈</h3>
+              <p>分段拆解上电→kernel→userspace→GUI，给出 P50/P90 对比、TOP 瓶颈与可落地动作。</p>
+            </div>
+            <div class="card">
+              <h3>rootfs 裁剪与依赖治理</h3>
+              <p>Buildroot/Debian/Ubuntu 按业务最小集裁剪，输出清单、风险点与回滚策略，降低镜像体积与交付成本。</p>
+            </div>
+            <div class="card">
+              <h3>可定位、可复现、可回滚</h3>
+              <p>统一统计口径与日志链路，避免“现场慢/偶发问题难复现”。关键改动脚本化、版本化，便于长期维护。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="case" class="section section--alt">
+        <div class="container">
+          <h2>案例（可量化结果）</h2>
+          <div class="case">
+            <div class="case__metrics">
+              <div class="metric">
+                <div class="metric__k">进桌面（GUI可交互）</div>
+                <div class="metric__v">30s+ → 10s 内</div>
+              </div>
+              <div class="metric">
+                <div class="metric__k">rootfs 镜像体积</div>
+                <div class="metric__v">1.9GB → 700MB</div>
+              </div>
+              <div class="metric">
+                <div class="metric__k">平台/系统</div>
+                <div class="metric__v">RK/RV｜Buildroot / Debian / Ubuntu</div>
+              </div>
+            </div>
+            <div class="case__desc">
+              <h3>方法概览</h3>
+              <ul class="list">
+                <li>建立启动基线与时间线（P50/P90）</li>
+                <li>rootfs 包裁剪与依赖收敛（保留/移除理由、风险、回滚）</li>
+                <li>非关键服务延后/异步，缩短“可交互首屏”时间</li>
+                <li>验收统计脚本化，结果可复现</li>
+              </ul>
+            </div>
+          </div>
+          <div class="note">
+            注：具体可达目标与周期，以 2 天快速诊断结果为准。
+          </div>
+        </div>
+      </section>
+
+      <section id="diagnosis" class="section">
+        <div class="container">
+          <h2>2天快速诊断（入口单）</h2>
+          <div class="grid grid--2">
+            <div class="card">
+              <h3>交付物（2天必交付）</h3>
+              <ul class="list">
+                <li>启动时间线与 TOP 瓶颈清单</li>
+                <li>rootfs 裁剪机会清单（含风险与回滚建议）</li>
+                <li>可达目标区间 + 5–10 天专项里程碑报价</li>
+                <li>验收方案（P50/P90 口径与测试步骤）</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>你需要提供</h3>
+              <ul class="list">
+                <li>设备/开发板或远程桌面 + 串口日志（能提供多少算多少）</li>
+                <li>固件镜像或构建方式（Buildroot / Debian / Ubuntu）</li>
+                <li>“进桌面可交互”的验收口径确认</li>
+              </ul>
+              <div class="callout">
+                诊断后 14 天内签专项：诊断费 100% 抵扣专项款。
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section section--alt">
+        <div class="container">
+          <h2>报价（里程碑验收）</h2>
+          <div class="grid grid--3">
+            <div class="card card--price">
+              <div class="price__title">2天快速诊断</div>
+              <div class="price__num">¥4,800</div>
+              <div class="price__desc">远程｜交付时间线/瓶颈/裁剪机会/专项报价/验收方案</div>
+              <a class="btn btn--primary btn--full" href="#contact">预约诊断</a>
+            </div>
+            <div class="card card--price">
+              <div class="price__title">5–10天专项优化</div>
+              <div class="price__num">¥19,800–39,800</div>
+              <div class="price__desc">启动加速 + rootfs 瘦身 + 交付脚本/清单/报告</div>
+              <a class="btn btn--ghost btn--full" href="#contact">获取里程碑报价</a>
+            </div>
+            <div class="card card--price">
+              <div class="price__title">加购项</div>
+              <div class="price__num">按需</div>
+              <div class="price__desc">端侧AI加速｜通信可靠性与诊断｜CI/质量门禁</div>
+              <a class="btn btn--ghost btn--full" href="#contact">咨询加购</a>
+            </div>
+          </div>
+
+          <div class="note">
+            付款建议：30%预付款 + 40%中期 + 30%验收。启动/体积按同一流程统计 P50/P90 对比验收。
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>联系方式</h2>
+          <div class="grid grid--2">
+            <div class="card">
+              <h3>直接联系杨工</h3>
+              <div class="contact">
+                <div class="contact__row"><span class="contact__k">电话</span><a class="contact__v" href="tel:13790753356">13790753356</a></div>
+                <div class="contact__row"><span class="contact__k">邮箱</span><a class="contact__v" href="mailto:ataiah@sina.com">ataiah@sina.com</a></div>
+                <div class="contact__row"><span class="contact__k">城市</span><span class="contact__v">深圳（远程优先）</span></div>
+              </div>
+              <div class="callout">
+                发我这三项信息即可开始：平台型号（RK/RV）、系统（Buildroot/Debian/Ubuntu）、当前进桌面秒数/镜像大小。
+              </div>
+            </div>
+            <div class="card">
+              <h3>合作方式</h3>
+              <ul class="list">
+                <li>远程交付为主（可周末/晚上配合）</li>
+                <li>先诊断后专项：边界清晰、验收清晰</li>
+                <li>交付包含脚本/清单/报告，关键改动可回滚</li>
+              </ul>
+              <div class="note">
+                边界说明：若涉及硬件缺陷、必须更换发行版/桌面框架重构等，将在诊断后另行评估工期与费用。
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__row">
+        <div>© <span id="y"></span> 杨工｜嵌入式 Linux / 端侧AI 工程化</div>
+        <div class="footer__links">
+          <a href="#what">能力</a>
+          <a href="#case">案例</a>
+          <a href="#pricing">报价</a>
+          <a href="#contact">联系</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
